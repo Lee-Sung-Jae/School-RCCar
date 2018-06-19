@@ -1,7 +1,7 @@
 inputValue = int(input('Input integer: ')) # Get input
-complement = []
+complement = [] # Crete List Variable
 
-for i in range(2, len(str(bin(inputValue)))):
+for i in range(2, len(str(bin(inputValue)))): # for-loop
 	complement.append(str((int(str(bin(inputValue))[i]) == 0) and 1 or 0)) # Get One's Complement
 
 print('Binary: ' + bin(inputValue)[2:]) # Prints binary value, cut first 2 chars to remove '0b'
